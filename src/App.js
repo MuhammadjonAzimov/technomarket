@@ -21,13 +21,15 @@ function App() {
     localStorage.setItem("bag", JSON.stringify([...bag, data]))
   }
 
+  console.log(products)
+
   return (
     <Wrapper>
       <Nav />
 
       <Routes>
         <Route path="/" element={<Products elements={products} addtobag={addtobag} />} />
-        <Route path="/bag" element={<Bagdetail />} />
+        <Route path="/bag" element={<Bagdetail elements={bag} />} />
       </Routes>
 
       <Bag elements={bag} />

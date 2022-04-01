@@ -21,7 +21,7 @@ export default Bag;
 const Wrapper = styled.div`
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
     grid-auto-rows: 80px;
     gap: 16px;
     position: relative;
